@@ -1,5 +1,5 @@
 /* ============================================
-   KICKS SELECT - Premium Shoe Store
+KICKS SELECT - Premium Shoe Store
    ============================================ */
 
 /* Reset y Base */
@@ -18,7 +18,7 @@ body {
 }
 
 /* ============================================
-   Navbar - Brand + Links LEFT, Search RIGHT
+Navbar - Brand + Links LEFT, Search RIGHT
    ============================================ */
 .navbar {
     background: #111;
@@ -107,7 +107,7 @@ body {
 }
 
 /* ============================================
-   Hero Section (carousel wrapper)
+Hero Section (carousel wrapper)
    ============================================ */
 .hero-section {
     max-width: 1200px;
@@ -139,7 +139,7 @@ body {
 }
 
 /* ============================================
-   Carousel - Horizontal scroll con flechas
+Carousel - Horizontal scroll con flechas
    ============================================ */
 .carousel-wrapper {
     position: relative;
@@ -224,7 +224,7 @@ body {
 
 .carousel-card-img img {
     width: 100%;
-    height: 140px;
+    height: auto;
     object-fit: contain;
     transition: transform 0.4s ease;
 }
@@ -629,7 +629,7 @@ body {
 }
 
 /* ============================================
-   Footer
+Footer
    ============================================ */
 .site-footer {
     background: #fff;
@@ -652,25 +652,6 @@ body {
     letter-spacing: 2px;
     color: #111;
 }
-
-.footer-links {
-    display: flex;
-    gap: 2rem;
-}
-
-.footer-links a {
-    color: #6b7280;
-    text-decoration: none;
-    font-size: 0.75rem;
-    font-weight: 600;
-    letter-spacing: 1px;
-    transition: color 0.2s;
-}
-
-.footer-links a:hover {
-    color: #111;
-}
-
 .footer-copy {
     font-size: 0.72rem;
     color: #9ca3af;
@@ -679,7 +660,7 @@ body {
 }
 
 /* ============================================
-   Gestión Page - Header, Form + Table
+Gestión Page - Header, Form + Table
    ============================================ */
 .page-header {
     max-width: 1200px;
@@ -760,8 +741,8 @@ table {
 }
 
 th {
-    background: #111;
-    color: white;
+    background: #00738d;
+    color: rgb(255, 255, 255);
     padding: 14px 16px;
     text-align: left;
     font-weight: 700;
@@ -840,7 +821,7 @@ button {
 }
 
 /* ============================================
-   Responsive
+Responsive
    ============================================ */
 @media (max-width: 768px) {
     .modal-product {

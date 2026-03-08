@@ -14,9 +14,11 @@ tableBody.addEventListener("click", async (e) => {
     const id = Number(btn.dataset.id);
 
     if (btn.classList.contains("btn-delete")) {
-        try {
-            await deleteItem(id);
-            loadItems();
+    const confirmacion = confirm("¿Está seguro de que desea borrar este producto?");
+    if (!confirmacion) return;
+    try {
+        await deleteItem(id);
+        loadItems();
         } catch (err) {
             console.error("Error eliminando:", err);
             alert("No se pudo eliminar el item.");
