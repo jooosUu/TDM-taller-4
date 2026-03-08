@@ -1,15 +1,5 @@
 [
   {
-    "id": 1,
-    "name": "Nike Air Max 90",
-    "description": "Zapatilla urbana icónica con unidad Air visible en el talón. Parte superior de cuero y malla para comodidad y soporte durante todo el día. Diseño clásico que nunca pasa de moda.",
-    "precio": 489900,
-    "categoria": "Deportivo",
-    "stock": 25,
-    "fecha": "2026-03-01",
-    "imageUrl": "./images/nike_air_max_90.png"
-  },
-  {
     "id": 2,
     "name": "Adidas Superstar",
     "description": "Clásico del streetwear con puntera de goma tipo concha. Diseño atemporal en cuero premium con las icónicas tres franjas laterales. Suela de goma vulcanizada para mayor tracción.",
