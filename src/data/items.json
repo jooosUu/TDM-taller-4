@@ -1,0 +1,122 @@
+[
+  {
+    "id": 1,
+    "name": "Nike Air Max 90",
+    "description": "Zapatilla urbana icónica con unidad Air visible en el talón. Parte superior de cuero y malla para comodidad y soporte durante todo el día. Diseño clásico que nunca pasa de moda.",
+    "precio": 489900,
+    "categoria": "Deportivo",
+    "stock": 25,
+    "fecha": "2026-03-01",
+    "imageUrl": "./images/nike_air_max_90.png"
+  },
+  {
+    "id": 2,
+    "name": "Adidas Superstar",
+    "description": "Clásico del streetwear con puntera de goma tipo concha. Diseño atemporal en cuero premium con las icónicas tres franjas laterales. Suela de goma vulcanizada para mayor tracción.",
+    "precio": 359900,
+    "categoria": "Casual",
+    "stock": 40,
+    "fecha": "2026-03-02",
+    "imageUrl": "./images/adidas_superstar.png"
+  },
+  {
+    "id": 3,
+    "name": "New Balance 550",
+    "description": "Zapatilla retro basketball de los 80s reinventada para el día a día. Parte superior en cuero con logo 'N' lateral bordado. Amortiguación cómoda y diseño versátil.",
+    "precio": 429900,
+    "categoria": "Casual",
+    "stock": 18,
+    "fecha": "2026-03-03",
+    "imageUrl": "./images/new_balance_550.png"
+  },
+  {
+    "id": 4,
+    "name": "Nike Air Force 1 '07",
+    "description": "El clásico absoluto del basketball convertido en ícono de la moda urbana. Cuero premium blanco, suela Air encapsulada y silueta limpia que combina con todo.",
+    "precio": 449900,
+    "categoria": "Casual",
+    "stock": 55,
+    "fecha": "2026-03-01",
+    "imageUrl": "./images/nike_air_force_1.png"
+  },
+  {
+    "id": 5,
+    "name": "Converse Chuck Taylor All Star",
+    "description": "El sneaker más emblemático de la historia. Lona de algodón resistente con puntera de goma y suela vulcanizada. Perfecto para cualquier outfit casual o creativo.",
+    "precio": 219900,
+    "categoria": "Casual",
+    "stock": 60,
+    "fecha": "2026-02-28",
+    "imageUrl": "./images/converse_chuck_taylor.png"
+  },
+  {
+    "id": 6,
+    "name": "Puma Suede Classic XXI",
+    "description": "Silueta retro en gamuza premium que ha sido favorita del hip-hop y el skate desde los 60s. Suela de goma plana con perfil bajo y comodidad diaria.",
+    "precio": 289900,
+    "categoria": "Casual",
+    "stock": 30,
+    "fecha": "2026-03-04",
+    "imageUrl": "./images/puma_suede_classic.png"
+  },
+  {
+    "id": 7,
+    "name": "Nike Dunk Low Retro",
+    "description": "Inspirado en el baloncesto universitario de los 80s. Cuero premium en dos tonos con acolchado en el tobillo y suela de goma con patrón de tracción.",
+    "precio": 459900,
+    "categoria": "Deportivo",
+    "stock": 15,
+    "fecha": "2026-03-05",
+    "imageUrl": "./images/nike_dunk_low.png"
+  },
+  {
+    "id": 8,
+    "name": "Adidas Samba OG",
+    "description": "De la cancha de fútbol indoor a las calles. Parte superior en cuero suave con las tres franjas en contraste. Suela de goma translúcida con perfil bajo.",
+    "precio": 399900,
+    "categoria": "Casual",
+    "stock": 22,
+    "fecha": "2026-03-03",
+    "imageUrl": "./images/adidas_samba.png"
+  },
+  {
+    "id": 9,
+    "name": "Timberland 6-inch Premium Boot",
+    "description": "La bota urbana por excelencia. Cuero Nubuck impermeable, suela con tecnología anti-fatiga, y construcción robusta para enfrentar cualquier terreno o clima.",
+    "precio": 699900,
+    "categoria": "Bota",
+    "stock": 8,
+    "fecha": "2026-03-01",
+    "imageUrl": "./images/timberland_boot.png"
+  },
+  {
+    "id": 10,
+    "name": "Vans Old Skool",
+    "description": "El primer zapato de Vans con la icónica franja lateral 'sidestripe'. Lona y gamuza reforzada, suela waffle para agarre en la tabla y estilo atemporal.",
+    "precio": 249900,
+    "categoria": "Casual",
+    "stock": 45,
+    "fecha": "2026-02-25",
+    "imageUrl": "./images/vans_old_skool.png"
+  },
+  {
+    "id": 11,
+    "name": "Nike Air Jordan 1 Retro High OG",
+    "description": "El sneaker que cambió la cultura. Cuero premium en la silueta que Michael Jordan hizo famosa en 1985. Amortiguación Air encapsulada y tobillo alto icónico.",
+    "precio": 749900,
+    "categoria": "Deportivo",
+    "stock": 6,
+    "fecha": "2026-03-06",
+    "imageUrl": "./images/jordan_1_retro.png"
+  },
+  {
+    "id": 12,
+    "name": "Birkenstock Arizona",
+    "description": "Sandalia alemana con plantilla de corcho anatómica que se moldea al pie. Dos correas ajustables de cuero y suela EVA ligera. Comodidad superior garantizada.",
+    "precio": 389900,
+    "categoria": "Sandalia",
+    "stock": 20,
+    "fecha": "2026-03-02",
+    "imageUrl": "./images/birkenstock_arizona.png"
+  }
+]
