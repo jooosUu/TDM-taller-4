@@ -86,6 +86,15 @@ if (searchInput) {
 function applyFilters() {
     const query = searchInput ? searchInput.value.toLowerCase().trim() : "";
     let filtered = allItems;
+    // Ocultar carrusel si hay búsqueda activa
+    const heroSection = document.querySelector(".hero-section");
+    if (heroSection) {
+        if (query !== "") {
+            heroSection.style.display = "none";
+        } else {
+            heroSection.style.display = "block";
+        }
+    }
 
     if (activeCategory !== "all") {
         filtered = filtered.filter(i => i.categoria === activeCategory);

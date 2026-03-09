@@ -343,7 +343,7 @@ Carousel - Horizontal scroll con flechas
    ============================================ */
 .catalog-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
     gap: 2rem;
     padding: 1.5rem 2rem;
 }
@@ -367,6 +367,9 @@ Carousel - Horizontal scroll con flechas
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.04);
     display: flex;
     flex-direction: column;
+    max-width: 320px;
+    width: 100%;
+    margin: 0 auto;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -652,6 +655,7 @@ Footer
     letter-spacing: 2px;
     color: #111;
 }
+
 .footer-copy {
     font-size: 0.72rem;
     color: #9ca3af;
@@ -672,6 +676,39 @@ Gestión Page - Header, Form + Table
     max-width: 1200px;
     margin: 0 auto;
     padding: 1rem 2rem 3rem;
+}
+
+/* ============================================
+   Boton Principal (Añadir Producto)
+   ============================================ */
+.btn-primary {
+    background: #111;
+    color: #fff;
+    padding: 14px 28px;
+    font-size: 0.85rem;
+    font-weight: 700;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    transition: all 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-primary:hover {
+    background: #333;
+    transform: translateY(-2px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+}
+
+.btn-primary:active {
+    transform: translateY(0);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
 }
 
 .gestion-form {

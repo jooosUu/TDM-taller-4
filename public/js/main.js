@@ -6,6 +6,28 @@ const tableBody = document.getElementById("itemsTable");
 const submitBtn = document.getElementById("submitBtn");
 let editingId = null;
 
+// Elementos del Modal
+const addModal = document.getElementById("addModal");
+const openAddModalBtn = document.getElementById("openAddModalBtn");
+const closeAddModalBtn = document.getElementById("closeAddModalBtn");
+
+// Eventos del Modal
+openAddModalBtn.addEventListener("click", () => {
+    resetForm(form, submitBtn);
+    editingId = null;
+    addModal.style.display = "block";
+});
+
+closeAddModalBtn.addEventListener("click", () => {
+    addModal.style.display = "none";
+});
+
+window.addEventListener("click", (e) => {
+    if (e.target === addModal) {
+        addModal.style.display = "none";
+    }
+});
+
 // Eventos de tabla (delegación)
 tableBody.addEventListener("click", async (e) => {
     const btn = e.target.closest("button");
@@ -14,11 +36,11 @@ tableBody.addEventListener("click", async (e) => {
     const id = Number(btn.dataset.id);
 
     if (btn.classList.contains("btn-delete")) {
-    const confirmacion = confirm("¿Está seguro de que desea borrar este producto?");
-    if (!confirmacion) return;
-    try {
-        await deleteItem(id);
-        loadItems();
+        const confirmacion = confirm("¿Está seguro de que desea borrar este producto?");
+        if (!confirmacion) return;
+        try {
+            await deleteItem(id);
+            loadItems();
         } catch (err) {
             console.error("Error eliminando:", err);
             alert("No se pudo eliminar el item.");
@@ -28,11 +50,13 @@ tableBody.addEventListener("click", async (e) => {
             if (editingId === id) {
                 resetForm(form, submitBtn);
                 editingId = null;
+                addModal.style.display = "none";
                 return;
             }
             const item = await getItem(id);
             fillForm(form, item, submitBtn);
             editingId = id;
+            addModal.style.display = "block";
         } catch (err) {
             console.error("Error cargando item:", err);
             alert("No se pudo cargar el item para edición.");
@@ -65,6 +89,7 @@ form.addEventListener("submit", async (e) => {
         }
 
         resetForm(form, submitBtn);
+        addModal.style.display = "none";
         loadItems();
     } catch (err) {
         console.error("Error guardando item:", err);

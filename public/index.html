@@ -38,20 +38,31 @@
         <p class="page-subtitle">Administra el catálogo de productos de la tienda</p>
     </section>
 
-    <div class="gestion-container">
-        <form id="itemForm" class="gestion-form">
-            <div class="form-grid">
-                <input type="text" id="name" placeholder="Nombre del zapato" required>
-                <input type="text" id="description" placeholder="Descripción del producto">
-                <input type="number" id="precio" placeholder="Precio (COP)" required min="0">
-                <input type="text" id="categoria" placeholder="Categoría" required>
-                <input type="number" id="stock" placeholder="Unidades" required min="0">
-                <input type="date" id="fecha" required>
-            </div>
-            <input type="url" id="imageUrl" placeholder="URL de imagen del producto">
-            <button type="submit" id="submitBtn">AGREGAR PRODUCTO</button>
-        </form>
+    <div class="gestion-container" style="flex-direction: column; align-items: start;">
+        <button id="openAddModalBtn" class="btn-primary" style="margin-bottom: 2rem;">+ AÑADIR PRODUCTO</button>
 
+        <!-- Modal para el Formulario -->
+        <div id="addModal" class="modal">
+            <div class="modal-content">
+                <span class="close-btn" id="closeAddModalBtn">&times;</span>
+                <h2 style="margin-top: 0; margin-bottom: 1.5rem; font-size: 1.5rem; font-weight: 800; color: #111;">
+                    Agregar / Editar Producto</h2>
+                <form id="itemForm" class="gestion-form">
+                    <div class="form-grid">
+                        <input type="text" id="name" placeholder="Nombre del zapato" required>
+                        <input type="text" id="description" placeholder="Descripción del producto">
+                        <input type="number" id="precio" placeholder="Precio (COP)" required min="0">
+                        <input type="text" id="categoria" placeholder="Categoría" required>
+                        <input type="number" id="stock" placeholder="Unidades" required min="0">
+                        <input type="date" id="fecha" required>
+                    </div>
+                    <input type="url" id="imageUrl" placeholder="URL de imagen del producto"
+                        style="margin-bottom: 1.5rem; width: 100%;">
+                    <button type="submit" id="submitBtn" class="btn-primary" style="width: 100%;">GUARDAR
+                        PRODUCTO</button>
+                </form>
+            </div>
+        </div>
         <div class="table-container">
             <table>
                 <thead>
